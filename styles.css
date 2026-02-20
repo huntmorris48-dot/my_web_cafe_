@@ -1,0 +1,267 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* light neutral background as fallback */
+    background: #fafafa;
+    color: #333;
+    padding: 20px;
+    /* no background image */
+    background: #fafafa;
+    color: #333;
+    padding: 20px;
+}
+
+/* make sure header and main content stand out over busy image */
+header, main, footer {
+    background: rgba(255,255,255,0.85);
+}
+
+/* adjust overlays for dark theme */
+body.dark-theme header, body.dark-theme main, body.dark-theme footer {
+    background: rgba(20,20,20,0.85);
+}
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    /* simple header styling without image */
+    background: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* contact section formatting */
+#contact {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+#contact a {
+    color: #0066cc;
+}
+body.dark-theme #contact {
+    border-top-color: #555;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+/* theme colors */
+body.light-theme {
+    background: #fafafa;
+    color: #333;
+}
+
+body.dark-theme {
+    background: #222;
+    color: #eee;
+    /* dark overlay on the safari image */
+    /* dark theme solid background */
+    background: #222;
+    color: #eee;
+    /* no image to blend */
+}
+
+body.dark-theme a {
+    color: #88b;
+}
+
+body.dark-theme nav a {
+    color: #8ab;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    border-color: #555;
+}
+
+/* place the theme switch in the top-left corner of the header */
+header {
+    position: relative;
+}
+
+.theme-switch {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 0; /* override earlier margin */
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    /* make the emoji icons larger and center them */
+    font-size: 1.4rem;
+    line-height: 1;
+    background: none;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+/* optionally highlight the currently active theme button */
+body.light-theme .theme-switch #btn-light,
+body.dark-theme .theme-switch #btn-dark {
+    outline: 2px solid #0066cc;
+}
+
+.theme-switch button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    /* make the emoji icons larger and center them */
+    font-size: 1.4rem;
+    line-height: 1;
+    background: none;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+/* optionally highlight the currently active theme button */
+body.light-theme .theme-switch #btn-light,
+body.dark-theme .theme-switch #btn-dark {
+    outline: 2px solid #0066cc;
+}
+
+/* print/download PDF control placed next to theme icons */
+.print-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* move PDF control to top-right corner */
+}
+.print-switch button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #888;
+    background: none;
+    border-radius: 4px;
+}
+
+/* print-specific styles */
+@media print {
+    body {
+        background: #fff !important;
+        color: #000 !important;
+    }
+    header .theme-switch, header .print-switch,
+    .lang-switch, nav, footer, #contact {
+        display: none !important;
+    }
+    header, main {
+        background: none !important;
+        padding: 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.lang-switch {
+    margin-top: 10px;
+}
+
+.lang-switch button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulseBg {
+    0% { background-color: rgba(255,255,255,0); }
+    50% { background-color: rgba(255,255,200,0.4); }
+    100% { background-color: rgba(255,255,255,0); }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.menu-animate {
+    animation: zoomIn 1.2s ease-out;
+}
+
+.fun-fact {
+    background: #fffae6;
+    padding: 10px 20px;
+    border-left: 4px solid #ffc107;
+    margin-bottom: 20px;
+}
+
+/* ensure readable fun-fact box in dark theme */
+body.dark-theme .fun-fact {
+    background: #333;
+    color: #eee;
+    border-left-color: #888;
+}
+
+#menu {
+    animation: pulseBg 5s infinite;
+}
+
+/* suppress pulsing in dark mode to avoid blinking on dark background */
+body.dark-theme #menu {
+    animation: none;
+    background: none;
+}

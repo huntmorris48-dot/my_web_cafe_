@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Coffee Experience Kenya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- header logo removed; no images folder present -->
+        <h1 id="title-en" class="fade-in">German Coffee Experience Kenya ☕️</h1>
+        <h1 id="title-de" class="hidden fade-in">Deutsches Kaffeeerlebnis Kenia ☕️</h1>
+        <p id="subtitle-en" class="fade-in">Authentic German café culture with premium Kenyan beans</p>
+        <p id="subtitle-de" class="hidden fade-in">Authentische deutsche Kaffekultur mit primen Kenyabohnen</p>
+        <div class="lang-switch">
+            <button id="btn-en">English</button>
+            <button id="btn-de">Deutsch</button>
+        </div>
+        <div class="theme-switch">
+            <!-- use sun and moon emojis for light/dark toggles; include aria-labels for accessibility -->
+            <button id="btn-light" aria-label="Switch to light theme">☀️</button>
+            <button id="btn-dark" aria-label="Switch to dark theme">🌙</button>
+        </div>
+        <div class="print-switch">
+            <button id="btn-download" aria-label="Download page as PDF">&#128190; PDF</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#features" id="nav-features-en">Our Features</a><a href="#features" id="nav-features-de" class="hidden">Unsere Besonderheiten</a></li>
+            <li><a href="#menu" id="nav-menu-en">Café Menu</a><a href="#menu" id="nav-menu-de" class="hidden">Café-Menü</a></li>
+            <li><a href="#culture" id="nav-culture-en">Coffee Culture Tips</a><a href="#culture" id="nav-culture-de" class="hidden">Kaffeekultur-Tipps</a></li>
+            <li><a href="#expectations" id="nav-expectations-en">What to Expect</a><a href="#expectations" id="nav-expectations-de" class="hidden">Was zu erwarten ist</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="fun-fact fade-in">
+            <p id="fact-en"><strong>Fun Fact:</strong> Kenya is one of the world's finest coffee producers! Our café brings together authentic German brewing traditions with premium Kenyan AA & AB grade beans for a unique experience.</p>
+            <p id="fact-de" class="hidden"><strong>Spaßfakt:</strong> Kenia ist einer der besten Kaffeeproduzenten der Welt! Unser Café verbindet authentische deutsche Brautradition mit Premium-Kenyabohnen der Klasse AA & AB für ein einzigartiges Erlebnis.</p>
+        </section>
+        <section id="menu" class="fade-in menu-animate">
+            <h2 id="menu-title-en">Menu – Deutsche Spezialitäten</h2>
+            <h2 id="menu-title-de" class="hidden">Menü – Deutsche Spezialitäten</h2>
+            <ul id="menu-list-en">
+                <li><strong>Kaffee</strong> – brewed coffee</li>
+                <li><strong>Espresso</strong> – short, strong coffee</li>
+                <li><strong>Cappuccino</strong> – with milk foam</li>
+                <li><strong>Latte Macchiato</strong> – layers of milk and coffee</li>
+                <li><strong>Schwarzwälder Kirschtorte</strong> – Black Forest cake</li>
+                <li><strong>Streuselkuchen</strong> – crumb cake</li>
+                <li><strong>Apfelstrudel</strong> – apple strudel with whipped cream</li>
+            </ul>
+            <ul id="menu-list-de" class="hidden">
+                <li><strong>Kaffee</strong> – gebrühter Kaffee</li>
+                <li><strong>Espresso</strong> – kurzer, starker Kaffee</li>
+                <li><strong>Cappuccino</strong> – mit Milchschaum</li>
+                <li><strong>Latte Macchiato</strong> – Schichten aus Milch und Kaffee</li>
+                <li><strong>Schwarzwälder Kirschtorte</strong> – Schwarzwälder Kirschtorte</li>
+                <li><strong>Streuselkuchen</strong> – Streuselkuchen</li>
+                <li><strong>Apfelstrudel</strong> – Apfelstrudel mit Schlagsahne</li>
+            </ul>
+        </section>
+
+        <section id="culture" class="fade-in">
+            <h2 id="culture-title-en">German Coffee Culture Tips</h2>
+            <h2 id="culture-title-de" class="hidden">Tipps zur deutschen Kaffeekultur</h2>
+            <p id="culture-text-en">Germans often take their time with coffee. It's common to sit and chat for long periods.</p>
+            <p id="culture-text-de" class="hidden">Deutsche nehmen sich oft Zeit für ihren Kaffee. Es ist üblich, lange zu sitzen und zu plaudern.</p>
+            <ul id="culture-list-en">
+                <li>Order "Kaffee" if you want regular filtered coffee.</li>
+                <li>It's polite to say "Bitte" (please) and "Danke" (thank you) when ordering.</li>
+                <li>Refills (Nachschlag) aren't usually free; you'll need to order another cup.</li>
+                <li>In many cafés you'll receive your bill at the table when you're ready.</li>
+                <li>Breakfast cafés (Frühstückscafés) often serve eggs, cheese, and bread alongside coffee.</li>
+            </ul>
+            <ul id="culture-list-de" class="hidden">
+                <li>Bestelle "Kaffee", wenn du normalen Filterkaffee möchtest.</li>
+                <li>Es ist höflich, "Bitte" und "Danke" zu sagen, wenn du bestellst.</li>
+                <li>Nachschlag ist normalerweise nicht kostenlos; du musst eine weitere Tasse bestellen.</li>
+                <li>In vielen Cafés bekommst du die Rechnung am Tisch, wenn du fertig bist.</li>
+                <li>Frühstückscafés servieren oft Eier, Käse und Brot zusammen mit Kaffee.</li>
+            </ul>
+        </section>
+
+        <section id="features" class="fade-in">
+            <h2 id="features-title-en">Why Choose German Coffee Experience Kenya?</h2>
+            <h2 id="features-title-de" class="hidden">Warum German Coffee Experience Kenya wählen?</h2>
+            <ul id="features-list-en">
+                <li><strong>Authentic Filter Coffee</strong> – Premium Kenyan AA & AB grade beans brewed the German way</li>
+                <li><strong>German Café Drinks</strong> – Espresso, Cappuccino, and specialty drinks prepared by trained baristas</li>
+                <li><strong>Coffee & Cake Culture</strong> – Pair your coffee with traditional German pastries</li>
+                <li><strong>Relaxed Seating Atmosphere</strong> – Comfortable spaces designed for long conversations</li>
+                <li><strong>German-Language Service</strong> – Staff who speak German, English, and Swahili</li>
+                <li><strong>Tourism-Friendly Environment</strong> – Perfect for travelers from Germany, Austria & Switzerland</li>
+            </ul>
+            <ul id="features-list-de" class="hidden">
+                <li><strong>Authentischer Filterkaffee</strong> – Premium Kenyabohnen der Klasse AA & AB auf deutsches Art gebraut</li>
+                <li><strong>Deutsche Cafégetrnke</strong> – Espresso, Cappuccino und Spezialitäten von geschulten Baristas zubereitet</li>
+                <li><strong>Kaffee & Kuchen Kultur</strong> – Genießen Sie Ihren Kaffee mit traditionellen deutschen Gebäcken</li>
+                <li><strong>Entspannte Sitzatmosphäre</strong> – Komfortable Räume für lange Gespräche</li>
+                <li><strong>Deutschsprachiger Service</strong> – Personal spricht Deutsch, Englisch und Suaheli</li>
+                <li><strong>tourismusfreundliche Umgebung</strong> – Ideal für Reisende aus Deutschland, Österreich & der Schweiz</li>
+            </ul>
+        </section>
+
+        <section id="expectations" class="fade-in">
+            <h2 id="expectations-title-en">What German Tourists Expect in Cafés</h2>
+            <h2 id="expectations-title-de" class="hidden">Was deutsche Touristen in Cafés erwarten</h2>
+            <ul id="expectations-list-en">
+                <li>High-quality coffee and clear menu descriptions.</li>
+                <li>Friendly but not overly familiar service.</li>
+                <li>Clean bathrooms and seating areas.</li>
+                <li>Free Wi-Fi is appreciated, often with a password.</li>
+                <li>Cards are accepted but carrying some cash (Bargeld) is good.</li>
+                <li>Quiet atmosphere; Germans prefer calm environments for conversation.</li>
+            </ul>
+            <ul id="expectations-list-de" class="hidden">
+                <li>Hochwertiger Kaffee und klare Menübeschreibungen.</li>
+                <li>Freundlicher, aber nicht zu vertrauter Service.</li>
+                <li>Saubere Toiletten und Sitzbereiche.</li>
+                <li>WLAN ist geschätzt, oft mit Passwort.</li>
+                <li>Karten werden akzeptiert, aber etwas Bargeld dabei zu haben ist gut.</li>
+                <li>Ruhige Atmosphäre; Deutsche bevorzugen ruhige Umgebungen für Gespräche.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:huntmorris48@gmail.com">huntmorris48@gmail.com</a></p>
+        <p>Location: Nairobi, Kenya</p>
+    </section>
+
+    <footer>
+        <p id="footer-text-en">&copy; 2026 German Coffee Experience Kenya - Located in Nairobi</p>
+        <p id="footer-text-de" class="hidden">&copy; 2026 Deutsches Kaffeeerlebnis Kenia - Gelegen in Nairobi</p>
+    </footer>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('[id$="-en"]').forEach(el => {
+                if (el.closest('.lang-switch')) return;
+                el.classList.toggle('hidden', lang !== 'en');
+            });
+            document.querySelectorAll('[id$="-de"]').forEach(el => {
+                if (el.closest('.lang-switch')) return;
+                el.classList.toggle('hidden', lang !== 'de');
+            });
+        }
+
+        document.getElementById('btn-en').addEventListener('click', () => switchLanguage('en'));
+        document.getElementById('btn-de').addEventListener('click', () => switchLanguage('de'));
+
+        function switchTheme(theme) {
+            document.body.classList.remove('light-theme', 'dark-theme');
+            document.body.classList.add(theme + '-theme');
+        }
+
+        document.getElementById('btn-light').addEventListener('click', () => switchTheme('light'));
+        document.getElementById('btn-dark').addEventListener('click', () => switchTheme('dark'));
+
+        // initialize to light theme
+        switchTheme('light');
+
+        document.getElementById('btn-download').addEventListener('click', () => {
+            window.print();
+        });
+    </script>
+</body>
+</html>
