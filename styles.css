@@ -29,6 +29,7 @@ body.dark-theme header, body.dark-theme main, body.dark-theme footer {
 }
 header {
     text-align: center;
+    padding-top: 60px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
     /* simple header styling without image */
@@ -129,7 +130,7 @@ header {
 
 .theme-switch {
     position: absolute;
-    top: 10px;
+    top: -5px;
     left: 10px;
     margin-top: 0; /* override earlier margin */
     display: flex;
@@ -175,7 +176,7 @@ body.dark-theme .theme-switch #btn-dark {
 /* print/download PDF control placed next to theme icons */
 .print-switch {
     position: absolute;
-    top: 10px;
+    top: -5px;
     right: 10px; /* move PDF control to top-right corner */
 }
 .print-switch button {
@@ -264,4 +265,76 @@ body.dark-theme .fun-fact {
 body.dark-theme #menu {
     animation: none;
     background: none;
+}
+
+/* ----------------------------------
+   responsive / mobile adjustments
+   ---------------------------------- */
+
+/* make content adapt to smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .theme-switch,
+    .print-switch,
+    .lang-switch {
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* each button on its own line to avoid collisions */
+    .theme-switch button,
+    .print-switch button,
+    .lang-switch button {
+        font-size: 1.2rem;
+        padding: 4px 8px;
+        display: block;
+        margin: 5px auto;
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
+
+/* very small screens adjustments */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    body {
+        padding: 5px;
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
 }
